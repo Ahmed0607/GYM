@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Alexandria", sans-serif;
+  --font-body: "Cairo", sans-serif;
+  --font-mono: "Space Grotesk", monospace;
+
+  --color-surface: #f5f5f7;
+  --color-surface-card: #ffffff;
+  --color-bauhaus-yellow: #facc15;
+  --color-bauhaus-yellow-hover: #eab308;
+  --color-bauhaus-blue: #2563eb;
+  --color-bauhaus-red: #ef4444;
+  --color-bauhaus-black: #111827;
+  --color-bauhaus-light-gray: #f3f4f6;
+}
+
+@layer base {
+  body {
+    font-family: "Cairo", sans-serif;
+    background-color: #f5f5f7;
+    color: #111827;
+    overscroll-behavior: none;
+  }
+}
+
+/* Material Symbols Outlined helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Bauhaus helpers */
+.font-headline {
+  font-family: "Alexandria", sans-serif;
+}
+
+.font-body {
+  font-family: "Cairo", sans-serif;
+}
+
+.font-mono {
+  font-family: "Space Grotesk", monospace;
+}
+
+/* Scrollbar hidden cleanly for kiosk / POS feel */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

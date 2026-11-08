@@ -1,0 +1,88 @@
+153: setPkgError('الاسم, Price, and المدة are required.');
+176: setPkgError('الاسم, Price, and المدة are required.');
+220: setPkgError('الاسم is required.');
+238: setPkgError('الاسم is required.');
+312: setPkgError('المبلغ is required.');
+335: if (!data) return <div className="text-black text-center">فشل تحميل لوحة التحكم.</div>;
+340: { label: "الأعضاء النشطين", value: data.kpis.total_active_members, icon: Users, color: 'text-cyan-400', bg: 'bg-cyan-400/10' },
+346: { id: 'overview', label: 'نظرة عامة', icon: Activity },
+347: { id: 'packages', label: 'إدارة الباقات', icon: Settings },
+348: { id: 'receptionists', label: 'إدارة موظفي الاستقبال', icon: UserCircle },
+350: { id: 'staff', label: 'إدارة الموظفين', icon: Briefcase },
+356: <h1 className="text-3xl font-bold text-black tracking-tight">لوحة تحكم المسؤول</h1>
+357: <p className="text-gray-500">نظرة عامة of gym performance and member status</p>
+402: {/* Today's Check-ins + Owing Money + ينتهي قريباً + Recent Subs */}
+431: {checkin.timestamp ? format(new التاريخ(checkin.timestamp), 'hh:mm a') : '--:--'}
+438: <div className="text-center text-gray-500 pt-8">لا توجد عمليات دخول اليوم.</div>
+447: أعضاء عليهم ديون
+457: <th className="pb-3 font-medium">الاسم</th>
+458: <th className="pb-3 font-medium text-end">مدين</th>
+486: <td colSpan="3" className="py-8 text-center text-gray-500">لا يوجد أعضاء عليهم ديون حالياً.</td>
+494: {/* ينتهي قريباً */}
+508: <th className="pb-3 font-medium">الاسم</th>
+509: <th className="pb-3 font-medium text-end">تاريخ الانتهاء</th>
+528: {format(new التاريخ(activeSub.end_date), 'MMM d, yyyy')}
+539: <td colSpan="3" className="py-8 text-center text-gray-500">لا يوجد أعضاء تنتهي اشتراكاتهم قريباً.</td>
+561: <th className="pb-3 font-medium">الاسم & Package</th>
+562: <th className="pb-3 font-medium text-end">المدفوع</th>
+582: {sub.start_date ? format(new التاريخ(sub.start_date), 'MMM d') : ''}
+592: <td colSpan="3" className="py-8 text-center text-gray-500">لا توجد اشتراكات أخيرة.</td>
+628: إعدادات الجلسة الفردية (للزوار)
+633: <label className="block text-xs text-gray-500 mb-1">سعر الجلسة الفردية ($)</label>
+647: حفظ Price
+657: <Package className="w-5 h-5 text-black" />باقات الاشتراك</div>
+662: <Plus className="w-4 h-4" />إضافة باقة</button>
+668: <p className="text-sm text-gray-500 font-medium">باقة جديدة</p>
+671: <label className="block text-xs text-gray-500 mb-1">Package الاسم</label>
+681: <label className="block text-xs text-gray-500 mb-1">السعر ($)</label>
+693: <label className="block text-xs text-gray-500 mb-1">المدة (أيام)</label>
+704: <label className="block text-xs text-gray-500 mb-1">جلسات (فارغ = غير محدود)</label>
+720: <Check className="w-4 h-4" />إنشاء</button>
+724: >إلغاء</button>
+736: لا توجد باقات معدّة. Add your first package above.
+743: <th className="pb-3 font-medium">Package الاسم</th>
+744: <th className="pb-3 font-medium text-end">السعر</th>
+745: <th className="pb-3 font-medium text-end">المدة</th>
+746: <th className="pb-3 font-medium text-end">الجلسات</th>
+747: <th className="pb-3 font-medium text-end w-32">إجراءات</th>
+818: <span className="text-gray-700">{pkg.duration_days} أيام</span>
+825: <Infinity className="w-4 h-4" />غير محدود</span>
+881: <UserCircle className="w-5 h-5 text-black" />موظفو الاستقبال</div>
+887: إضافة موظف استقبال
+891: {/* إضافة موظف استقبال Form */}
+894: <p className="text-sm text-gray-500 font-medium">موظف استقبال جديد</p>
+896: <label className="block text-xs text-gray-500 mb-1">الاسم</label>
+910: <Check className="w-4 h-4" />إنشاء</button>
+914: >إلغاء</button>
+922: لا يوجد موظفي استقبال.
+929: <th className="pb-3 font-medium">رقم</th>
+930: <th className="pb-3 font-medium">الاسم</th>
+931: <th className="pb-3 font-medium text-end w-32">إجراءات</th>
+1026: {/* التاريخ Filter */}
+1029: <label className="block text-sm text-gray-500 mb-1">Start التاريخ</label>
+1033: <label className="block text-sm text-gray-500 mb-1">End التاريخ</label>
+1036: <button onClick={handleCalculateFinances} className="px-6 py-2 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors text-sm h-[38px]">حساب</button>
+1038: <button onClick={() => { setFilteredFinances(null); setFinanceStart(''); setFinanceEnd(''); }} className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300 transition-colors text-sm h-[38px]">مسح التصفية</button>
+1044: <div className="text-sm font-medium text-gray-500 mb-1 flex items-center gap-2"><TrendingUp className="w-4 h-4 text-emerald-500"/> صافي الأرباح</div>
+1048: <div className="text-sm font-medium text-gray-500 mb-1 flex items-center gap-2"><Briefcase className="w-4 h-4 text-rose-500"/>رواتب</div>
+1052: <div className="text-sm font-medium text-gray-500 mb-1 flex items-center gap-2"><Settings className="w-4 h-4 text-amber-500"/> إصلاح وصيانة</div>
+1056: <div className="text-sm font-medium text-gray-500 mb-1 flex items-center gap-2"><Receipt className="w-4 h-4 text-cyan-500"/>فواتير</div>
+1064: <h3 className="font-semibold text-black flex items-center gap-2"><TrendingDown className="w-5 h-5"/> تسجيل المصروف</h3>
+1070: <option value="Maintenance">إصلاح وصيانة</option>
+1071: <option value="Bill">فاتورة</option>
+1073: <input type="number" placeholder="المبلغ ($)" value={newExpenseForm.amount} onChange={e=>setNewExpenseForm({...newExpenseForm, amount: e.target.value})} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-sm"/>
+1074: <input type="text" placeholder="الوصف (Optional)" value={newExpenseForm.description} onChange={e=>setNewExpenseForm({...newExpenseForm, description: e.target.value})} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-sm"/>
+1075: <button onClick={handleAddExpense} className="w-full py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors">تسجيل المصروف</button>
+1102: <h3 className="font-semibold text-black flex items-center gap-2"><Briefcase className="w-5 h-5"/>الموظفين</h3>
+1103: <button onClick={() => setShowAddStaff(!showAddStaff)} className="px-4 py-2 bg-black text-white hover:bg-gray-800 font-semibold rounded-lg transition-colors flex items-center gap-2 text-sm"><Plus className="w-4 h-4"/> إضافة موظف</button>
+1108: <input type="text" placeholder="الاسم" value={newStaffForm.name} onChange={e=>setNewStaffForm({...newStaffForm, name: e.target.value})} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-sm"/>
+1111: <input type="number" placeholder="الراتب/mo" value={newStaffForm.base_salary} onChange={e=>setNewStaffForm({...newStaffForm, base_salary: e.target.value})} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-sm"/>
+1113: <label className="text-xs text-gray-500">يوم الدفع</label>
+1118: <button onClick={handleAddStaff} className="px-5 py-2.5 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors text-sm">إضافة موظف العضو</button>
+1119: <button onClick={() => setShowAddStaff(false)} className="px-5 py-2.5 bg-gray-200 text-gray-700 font-semibold rounded-lg hover:bg-gray-300 transition-colors text-sm">إلغاء</button>
+1136: <div className="text-xs text-gray-400">/ شهر</div>
+1142: <span className="text-gray-500">آخر دفعة:</span>
+1143: <span className="font-semibold text-black">{format(new التاريخ(staff.last_paid_date), 'MMM d, yyyy')}</span>
+1147: <span className="text-emerald-700 font-semibold">مكافأة:</span> <span className="font-bold text-emerald-800">${staff.pending_bonus}</span>
+1150: <span className="text-rose-700 font-semibold">خصم:</span> <span className="font-bold text-rose-800">${staff.pending_deduction}</span>
+1157: <button onClick={() => handleUpdatePending(staff.id, document.getElementById(`bonus-${staff.id}`).value, document.getElementById(`deduct-${staff.id}`).value)} className="w-1/3 bg-black text-white rounded text-xs font-semibold hover:bg-gray-800 transition-colors">تطبيق</button>
